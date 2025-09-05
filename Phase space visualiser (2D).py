@@ -58,11 +58,10 @@ def plotVectorField():
 def plotFlowField(amount):
 
     resolution = 200
+    step = 0.1
 
     # Spawing specified amount of particles and plotting trajectories
     for i in range(amount):
-
-        step = 0.1
 
         # Arrays to store the trajectory
         x = np.zeros(resolution)
@@ -83,4 +82,5 @@ def plotFlowField(amount):
 # Plotting and displaying the data
 plotVectorField()
 plotFlowField(100)
+
 plt.show()
