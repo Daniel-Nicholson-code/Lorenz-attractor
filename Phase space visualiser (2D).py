@@ -21,7 +21,7 @@ def transformCoordinates(x1, y1, step):
     # Here is where we define the differential equations
     mu = 1
     xdot = mu*( x1 - x1*x1*x1/3 - y1 )
-    ydot = mu*x1
+    ydot = x1/mu
 
     # Calculating how to scale the gradients to make the line length = step
     scaleFactor = step / np.sqrt(xdot*xdot + ydot*ydot)
@@ -84,3 +84,4 @@ plotVectorField()
 plotFlowField(100)
 
 plt.show()
+
