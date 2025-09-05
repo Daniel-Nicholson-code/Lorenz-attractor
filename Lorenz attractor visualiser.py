@@ -27,7 +27,6 @@ def transformCoordinates(x1, y1, z1, step):
     ydot = -x1*z1 + rho*x1 - y1
     zdot = x1*y1 - beta*z1
 
-
     # Calculating how to scale the gradients to make the line length = step
     scaleFactor = step / np.sqrt(xdot*xdot + ydot*ydot + zdot*zdot)
 
@@ -74,4 +73,5 @@ def plotFlowField(amount):
 
 # Plotting and displaying the data
 plotFlowField(20)
+
 plt.show()
