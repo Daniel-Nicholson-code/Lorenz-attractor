@@ -1,4 +1,4 @@
-# Lorenz-attractor
+# Attractors
 Exploring attractors in the field of dynamical systems
 
 This project is documented on my website: [here](https://danielnicholson.uk/documentation.php?project=Lorenz%20attractor)
